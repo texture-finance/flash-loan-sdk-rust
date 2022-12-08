@@ -1,0 +1,26 @@
+[package]
+name = "flash-loan-examples"
+version = "0.0.1"
+description = "Flash loan SDK examples"
+authors = ["Denis <d.komissarov@zubr.io>"]
+license = "Apache-2.0"
+edition = "2018"
+
+[dependencies]
+num-derive = "0.3"
+num-traits = "0.2"
+solana-program = "1.14"
+spl-token = { version = "3.3.1", features = ["no-entrypoint"]  }
+thiserror = "1.0"
+uint = "0.9.0"
+bytemuck = { version = "1.7.3", features = ["extern_crate_std", "min_const_generics"] }
+solana-client = "1.14"
+solana-sdk = "1.14"
+flash-loan-sdk = { path="../lib" }
+structopt = "0.3"
+dirs-next = "2.0.0"
+derive_more = "0.99.17"
+
+[[bin]]
+name = "flash-loan-example"
+path = "flash_loan_once.rs"

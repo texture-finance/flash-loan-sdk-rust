@@ -1,0 +1,11 @@
+[workspace]
+members = [
+    "lib",
+    "examples",
+]
+
+[profile.dev]
+split-debuginfo = "unpacked"
+
+[profile.release]
+debug = true
